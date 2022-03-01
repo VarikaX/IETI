@@ -10,7 +10,6 @@
 /****************************************************************************/
 
 #include    "mbed.h"
-#include    "nRF24.h"
 #include    "DMX_MIDI.h"
 #include    "projecteurs.h"
 #include    "controleurs.h"
@@ -23,9 +22,6 @@ DigitalOut      debug_out(D13);
 int main() {
     debug_pc.baud(115200);
     debug_pc.printf("Test\r\n");
-    
-    /* Initialisation comm nRF24 - nécessite l'extension MIDI */
-    //initNRF24();
     
     // Initialisation périphériques
     initDMX();
