@@ -27,18 +27,44 @@ int main() {
     initDMX();
     initMIDI();
     //initMIDI2();
-    //initProjectors();
+    initProjectors();
     //initController();
     
-    dmx_data[0] = 0;
-    dmx_data[3] = 255;
-    dmx_data[4] = 255;
-    dmx_data[5] = 100;
-    dmx_data[6] = 50;
+    dmx_data[0] = 150;
+    dmx_data[1] = 255;
+    dmx_data[2] = 100;
+    dmx_data[3] = 0;
+    dmx_data[4] = 0;
+    dmx_data[5] = 0;
+    dmx_data[6] = 0;
+
+    dmx_data[8] = 150;
+    dmx_data[9] = 255;
+    dmx_data[10] = 100;
+    dmx_data[11] = 0;
+    dmx_data[12] = 0;
+    dmx_data[13] = 0;
+    dmx_data[14] = 0;
+
+    dmx_data[16] = 150;
+    dmx_data[17] = 255;
+    dmx_data[18] = 100;
+    dmx_data[19] = 0;
+    dmx_data[20] = 0;
+    dmx_data[21] = 0;
+    dmx_data[22] = 0;
+
+    dmx_data[24] = 150;
+    dmx_data[25] = 255;
+    dmx_data[26] = 100;
+    dmx_data[27] = 0;
+    dmx_data[28] = 0;
+    dmx_data[29] = 0;
+    dmx_data[30] = 0;
+
 
     while(1) { 
         /* MIDI */
-        
         if(isNoteMIDIdetected()){
             //updateProjFromMidi(note_data);
             playNoteMIDI2(note_data, velocity_data);
@@ -51,7 +77,8 @@ int main() {
                 dmx_data[4] = 0;
                 dmx_data[5] = velocity_data;
                 dmx_data[6] = 0;
-            }                
+            }
+            printf("Ca marche");                
             resetNoteMIDI();
         }
         
@@ -65,8 +92,7 @@ int main() {
         }
         
         updateDMX();
-        wait_us(10000);
-        
+        wait_us(1000);
     }
 }
 
