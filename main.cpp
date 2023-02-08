@@ -14,6 +14,8 @@
 #include    "projecteurs.h"
 #include    "controleurs.h"
 
+//TEST
+
 Serial          debug_pc(USBTX, USBRX);
 InterruptIn     bp_int(USER_BUTTON);
 DigitalOut      debug_out(D13);
