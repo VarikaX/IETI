@@ -18,8 +18,6 @@ Serial          debug_pc(USBTX, USBRX);
 InterruptIn     bp_int(USER_BUTTON);
 DigitalOut      debug_out(D13);
 
-//fjkdslqjm
-
 // Main
 int main() {
     debug_pc.baud(115200);
