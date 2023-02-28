@@ -20,15 +20,6 @@ Serial          debug_pc(USBTX, USBRX);
 InterruptIn     bp_int(USER_BUTTON);
 DigitalOut      debug_out(D13);
 
-AnalogIn        Entree1(PA_0);
-AnalogIn        Entree2(PA_1);
-AnalogIn        Entree3(PA_4);
-AnalogIn        Entree4(PB_0);
-AnalogIn        Entree5(PC_1);
-AnalogIn        Entree6(PC_0);
-
-double meas1, meas2, meas3, meas4, meas5, meas6;
-
 // Main
 int main() {
     debug_pc.baud(115200);
@@ -75,19 +66,6 @@ int main() {
 
     while(1)
     {
-        meas1 = Entree1.read();
-        meas2 = Entree2.read();
-        meas3 = Entree3.read();
-        meas4 = Entree4.read();
-        meas5 = Entree5.read();
-        meas6 = Entree6.read();
-        printf("Mesure 1 : %lf\n", meas1);
-        printf("Mesure 2 : %lf\n", meas2);
-        printf("Mesure 3 : %lf\n", meas3);
-        printf("Mesure 4 : %lf\n", meas4);
-        printf("Mesure 5 : %lf\n", meas5);
-        printf("Mesure 6 : %lf\n", meas6);
-
         wait_us(1000000);
     }
 
