@@ -32,37 +32,37 @@ int main() {
     initProjectors();
     //initController();
     
-    dmx_data[0] = 150;
-    dmx_data[1] = 255;
-    dmx_data[2] = 100;
-    dmx_data[3] = 0;
-    dmx_data[4] = 0;
-    dmx_data[5] = 0;
-    dmx_data[6] = 0;
+    dmx_data[32] = 150;
+    dmx_data[33] = 255;
+    dmx_data[34] = 100;
+    dmx_data[35] = 0;
+    dmx_data[36] = 0;
+    dmx_data[37] = 0;
+    dmx_data[38] = 0;
 
-    dmx_data[8] = 150;
-    dmx_data[9] = 255;
-    dmx_data[10] = 100;
-    dmx_data[11] = 0;
-    dmx_data[12] = 0;
-    dmx_data[13] = 0;
-    dmx_data[14] = 0;
+    dmx_data[40] = 150;
+    dmx_data[41] = 255;
+    dmx_data[42] = 100;
+    dmx_data[43] = 0;
+    dmx_data[44] = 0;
+    dmx_data[45] = 0;
+    dmx_data[46] = 0;
 
-    dmx_data[16] = 150;
-    dmx_data[17] = 255;
-    dmx_data[18] = 100;
-    dmx_data[19] = 0;
-    dmx_data[20] = 0;
-    dmx_data[21] = 0;
-    dmx_data[22] = 0;
+    dmx_data[48] = 150;
+    dmx_data[49] = 255;
+    dmx_data[50] = 100;
+    dmx_data[51] = 0;
+    dmx_data[52] = 0;
+    dmx_data[53] = 0;
+    dmx_data[54] = 0;
 
-    dmx_data[24] = 150;
-    dmx_data[25] = 255;
-    dmx_data[26] = 100;
-    dmx_data[27] = 0;
-    dmx_data[28] = 0;
-    dmx_data[29] = 0;
-    dmx_data[30] = 0;
+    dmx_data[56] = 150;
+    dmx_data[57] = 255;
+    dmx_data[58] = 100;
+    dmx_data[59] = 0;
+    dmx_data[60] = 0;
+    dmx_data[61] = 0;
+    dmx_data[62] = 0;
 
 
     while(1) { 
@@ -97,4 +97,3 @@ int main() {
         wait_us(1000);
     }
 }
-
